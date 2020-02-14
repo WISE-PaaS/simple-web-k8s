@@ -41,9 +41,9 @@ service/server-node-port   NodePort    10.96.0.211   <none>        3050:31515/TC
   192.168.64.12
   ```
 
-- Inside the browser, go to the following address using the IP that you just got. You also need to specify the port in the URL. For example, ``192.168.64.12:31515``. Then, you should see a gretting saying "How are you doing".
+- Inside the browser, go to the following address using the IP that you just got. You also need to specify the port in the URL. For example, ``{minikubeIP}:31515``. Then, you should see a gretting saying "How are you doing".
 
-- Back to the terminal, type the following command to stream the logs for the pod we just deployed.
+- Back to the terminal, type the following command to stream the real-time logs to the STDIO.
   ```
   $ kubectl logs -f pod/web-pod
 
@@ -53,14 +53,7 @@ service/server-node-port   NodePort    10.96.0.211   <none>        3050:31515/TC
   Listening on port 8080
 
   ```
-- Send the following request in the brower's URL
-  ```
-  # Relace {YOUR_NAME} with your name
-
-  192.168.64.12:31515/name/{YOUR_NAME}
-  ```
-  Then, you should see the response in the termal.
+- Type the following URL in the browser: ``{minikubeIP}:31515/name/{YOUR_NAME}`` (Relace {YOUR_NAME} with your name). Then, you should see the response in the termal.
   ```
   Hi, {YOUR_NAME}!
   ```
-  
