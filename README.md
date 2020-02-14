@@ -1,5 +1,5 @@
 # Simple Web Server Demo
-This example demonstrage how to use **NodePort** and **Pod** objects to deploy a Express server to the local Kubernetes cluster.
+This example demonstrates how to use **NodePort** and **Pod** objects to deploy a Express server to the local Kubernetes cluster.
 
 ## Steps
 ### Downloading the project
