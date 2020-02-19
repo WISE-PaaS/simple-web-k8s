@@ -1,7 +1,16 @@
 # Simple Web Server Demo
 This example demonstrates how to use **NodePort** and **Pod** objects to deploy a Express server to the local Kubernetes cluster.
 
-## Steps
+## Architecture
+
+![architecture](./img/architecture.png)
+
+## NodePort Service
+
+![nodeport](./img/nodeport.png)
+
+## Quick Start
+
 ### Downloading the project
 ```
 $ git clone git@github.com:WISE-PaaS/simple-web-k8s.git
