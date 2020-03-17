@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: server
-      image: allguitars/web-demo
+      image: ensaas/web-demo:v1.0.0
       ports:
         - containerPort: 8080
